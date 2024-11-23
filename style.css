@@ -1,0 +1,243 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.title_names{  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif ;
+}
+#tl{
+    color:red;
+}
+
+/* Main container styles */
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    /* border: 2px solid red; */
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 90%;
+}
+
+/* Row styles */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Adjusts rows for smaller screens */
+}
+ /* Cell styles */
+.cell {
+    border: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(255, 0, 251);
+    font-weight: bold;
+    background-color: black;
+}
+.cell:active {
+    outline: none;
+}
+#userInput1, #userInput2{
+    width: 150px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+
+/* Dynamic border rules */
+#b1 , #b2, #b3, #b4, #b5 , #b6, #b7 , #b8, #b9{
+   
+    border: 1px solid gray;
+}
+
+ 
+
+/* Enter names section */
+.enter_names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+/* Output section */
+.output {
+    margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title */
+#title {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Button styling */
+button {
+    cursor: pointer;
+    font-family: serif;
+     
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgba(0, 87, 179, 0.9);
+}
+
+/* Player turn */
+#player_turn {
+    font-size: 15px;
+    color:rgb(0, 255, 0);
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    max-width: 90%; /* Ensures it doesn't take too much width on smaller screens */
+    margin-left: auto; /* Center the element */
+    margin-right: auto; /* Center the element */
+
+}
+
+/* Reset button */
+#reset {
+    cursor: pointer;
+     
+    margin: 30px auto;
+    display: block;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    height: auto;
+}
+#reset:hover{
+    background-color:rgba(0, 87, 179, 0.9);
+}
+
+/* General text */
+span {
+    color:rgb(0, 255, 0);
+}
+#mb{
+    cursor: pointer;
+    font-family: serif;
+    
+    padding: 10px;   
+}
+#p1_chance{
+    color: white;
+    text-align: center;
+}
+#p2_chance{
+    color: white;
+    text-align: center;
+}
+#span_p1, #span_p2{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+#p1_name, #p2_name{
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+/* Responsive styling */
+@media (max-width: 768px) {
+    .cell {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+    
+    .enter_names, .output {
+        margin-top: 10px;
+    }
+    
+    #title {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    #player_turn {
+        font-size: 18px;
+        margin-top: 20px;
+        font-size: 14px;
+        padding: 8px;
+        max-width: 95%;
+    }
+
+    button {
+        font-size: medium;
+        padding: 8px;
+    }
+
+    #reset {
+        font-size: medium;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px auto;
+        border-radius: 8px;
+        padding: 10px;
+        max-width: 250%;
+        max-height: 250%;
+       }
+    .cell {
+        width: 90px;
+        height: 90px;
+        font-size: 40px;
+    }
+
+    .title_names{
+        margin-top: 20px;
+        font-size: 18px;
+        
+    }
+
+    button {
+        font-size: small;
+        padding: 6px;
+    }
+    
+    #reset {
+        font-size: small;
+        padding: 6px;
+    }
+    #player_turn {
+        font-size: 30px;
+        padding: 6px;
+        max-width: 90%;
+    }
+    #span_p1, #span_p2{
+        color: white;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    }
+}

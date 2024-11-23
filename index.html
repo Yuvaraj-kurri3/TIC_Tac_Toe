@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <div class="title_names">
+            <h1 id="t1" style="color: rgb(255, 0, 0);">Tic</h1>
+            <h1 id="t2" style="color: #00ff00;">Tac</h1>
+            <h1 id="t3" style="color: aqua;">Toe</h1>
+     </div>
+    <div class="enter_names">
+       <!-- Input Section -->
+   <span id="p1_name">Player1 name: </span><input type="text" id="userInput1" placeholder="Enter player1 name">         
+   <span id="p2_name">Player2 name: </span>
+    <input type="text" id="userInput2" placeholder="Enter player2 name">
+    
+    <button onclick="manipulateData()" id="mb">Submit</button>
+      </div>
+      <p id="p1_chance"><span id="span_p1"></span></p>
+      <p id="p2_chance"><span id="span_p2"> </span></p>
+      <p id="player_turn"></p>
+    <div class="cont">
+        <div class="row">
+                <input type="text" id= "b1" class="cell" onclick="fun1(); fun();" readonly>
+                <input type="text" id= "b2"  class="cell" onclick="fun2(); fun();"  readonly>
+                <input type="text" id= "b3" class="cell" onclick="fun3(); fun();" readonly>
+        </div>
+        <div class="row">
+            <input type="text" id= "b4" class="cell" onclick="fun4(); fun();" readonly>
+            <input type="text" id= "b5"  class="cell"  onclick="fun5(); fun();" readonly>
+            <input type="text" id= "b6" class="cell" onclick="fun6(); fun();" readonly>
+    </div>
+    <div class="row">
+        <input type="text" id= "b7" class="cell" onclick="fun7(); fun();"  readonly>
+        <input type="text" id= "b8"  class="cell" onclick="fun8(); fun();"  readonly>
+        <input type="text" id= "b9" class="cell" onclick="fun9(); fun();" readonly>
+    </div>
+    </div>
+    
+    <button id="reset" onclick="game_reset()">RESET</button>
+    <script src="./script.js"></script>
+</body>
+</html>
